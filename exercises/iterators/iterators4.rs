@@ -3,9 +3,9 @@
 // Execute `rustlings hint iterators4` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
-pub fn factorial(num: u64) -> u64 {
+
+
     // Complete this function to return the factorial of num
     // Do not use:
     // - return
@@ -15,7 +15,12 @@ pub fn factorial(num: u64) -> u64 {
     // For an extra challenge, don't use:
     // - recursion
     // Execute `rustlings hint iterators4` for hints.
+
+
+pub fn factorial(num: u64) -> u64 {
+    (1..=num).product()// 表示1到num中所有的数字的乘积
 }
+
 
 #[cfg(test)]
 mod tests {
